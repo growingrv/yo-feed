@@ -20,7 +20,16 @@ struct BaseView: View {
 
     @ViewBuilder
     func onboardedView() -> some View {
-        HomeView()
+        TabView {
+            HomeView()
+                .tabItem({
+                    Label("Home", systemImage: "house")
+                })
+            SettingsView()
+                .tabItem({
+                    Label("Settings", systemImage: "gear")
+                })
+        }
     }
 }
 
