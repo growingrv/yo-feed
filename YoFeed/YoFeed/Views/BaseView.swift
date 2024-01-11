@@ -8,8 +8,19 @@
 import SwiftUI
 
 struct BaseView: View {
+    @AppStorage("onboarded") var onboarded: Bool = false
+
     var body: some View {
-        Text("Hello, World!")
+        if onboarded {
+            onboardedView()
+        } else {
+            IntroductionView()
+        }
+    }
+
+    @ViewBuilder
+    func onboardedView() -> some View {
+        HomeView()
     }
 }
 

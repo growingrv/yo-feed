@@ -16,6 +16,8 @@
 		6FBEED812B4F1857000635C7 /* YoFeedUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FBEED802B4F1857000635C7 /* YoFeedUITests.swift */; };
 		6FBEED832B4F1857000635C7 /* YoFeedUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FBEED822B4F1857000635C7 /* YoFeedUITestsLaunchTests.swift */; };
 		6FBEED932B501F76000635C7 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FBEED922B501F76000635C7 /* BaseView.swift */; };
+		6FBEED972B502027000635C7 /* IntroductionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FBEED962B502027000635C7 /* IntroductionView.swift */; };
+		6FBEED9A2B5020C5000635C7 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FBEED992B5020C5000635C7 /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,8 @@
 		6FBEED802B4F1857000635C7 /* YoFeedUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoFeedUITests.swift; sourceTree = "<group>"; };
 		6FBEED822B4F1857000635C7 /* YoFeedUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoFeedUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		6FBEED922B501F76000635C7 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		6FBEED962B502027000635C7 /* IntroductionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroductionView.swift; sourceTree = "<group>"; };
+		6FBEED992B5020C5000635C7 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,12 +102,10 @@
 		6FBEED622B4F1855000635C7 /* YoFeed */ = {
 			isa = PBXGroup;
 			children = (
+				6FBEED942B501FB8000635C7 /* App */,
 				6FBEED912B501F5E000635C7 /* Models */,
 				6FBEED902B501F54000635C7 /* ViewModels */,
 				6FBEED8F2B501F4E000635C7 /* Views */,
-				6FBEED632B4F1855000635C7 /* YoFeedApp.swift */,
-				6FBEED652B4F1855000635C7 /* ContentView.swift */,
-				6FBEED672B4F1855000635C7 /* Item.swift */,
 				6FBEED692B4F1857000635C7 /* Assets.xcassets */,
 				6FBEED6B2B4F1857000635C7 /* Preview Content */,
 			);
@@ -138,6 +140,8 @@
 		6FBEED8F2B501F4E000635C7 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				6FBEED982B5020B7000635C7 /* Home */,
+				6FBEED952B502016000635C7 /* Onboarding */,
 				6FBEED922B501F76000635C7 /* BaseView.swift */,
 			);
 			path = Views;
@@ -153,8 +157,34 @@
 		6FBEED912B501F5E000635C7 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				6FBEED672B4F1855000635C7 /* Item.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		6FBEED942B501FB8000635C7 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				6FBEED652B4F1855000635C7 /* ContentView.swift */,
+				6FBEED632B4F1855000635C7 /* YoFeedApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		6FBEED952B502016000635C7 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				6FBEED962B502027000635C7 /* IntroductionView.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		6FBEED982B5020B7000635C7 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				6FBEED992B5020C5000635C7 /* HomeView.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -287,8 +317,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6FBEED972B502027000635C7 /* IntroductionView.swift in Sources */,
 				6FBEED662B4F1855000635C7 /* ContentView.swift in Sources */,
 				6FBEED682B4F1855000635C7 /* Item.swift in Sources */,
+				6FBEED9A2B5020C5000635C7 /* HomeView.swift in Sources */,
 				6FBEED642B4F1855000635C7 /* YoFeedApp.swift in Sources */,
 				6FBEED932B501F76000635C7 /* BaseView.swift in Sources */,
 			);
