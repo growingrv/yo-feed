@@ -8,11 +8,13 @@
 import SwiftUI
 
 struct HomeView: View {
+    @State var isOnboarded: Bool
+    
     var body: some View {
-        Text("Hello, World!")
+        Label("Home", systemImage: "house")
     }
 }
 
 #Preview {
-    HomeView()
+    HomeView(isOnboarded: false)
 }

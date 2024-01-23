@@ -8,20 +8,20 @@
 import SwiftUI
 
 struct BaseView: View {
-    @AppStorage("onboarded") var onboarded: Bool = false
+    @AppStorage("onboarded") var isOnboarded: Bool = false
 
     var body: some View {
-        if onboarded {
+        if isOnboarded {
             onboardedView()
         } else {
-            IntroductionView()
+            IntroductionView(isOnboarded: $isOnboarded)
         }
     }
 
     @ViewBuilder
     func onboardedView() -> some View {
         TabView {
-            HomeView()
+            HomeView(isOnboarded: false)
                 .tabItem({
                     Label("Home", systemImage: "house")
                 })

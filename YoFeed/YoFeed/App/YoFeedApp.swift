@@ -25,7 +25,8 @@ struct YoFeedApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            BaseView()
+            // ContentView()
         }
         .modelContainer(sharedModelContainer)
     }
